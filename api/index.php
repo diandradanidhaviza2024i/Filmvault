@@ -4,17 +4,22 @@ use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));
 
-// 1. Muat Autoloader Vendor
+// --- TAMBAHAN BARU: Alihkan semua file cache bawaan Laravel ke /tmp ---
+putenv('APP_SERVICES_CACHE=/tmp/services.php');
+putenv('APP_PACKAGES_CACHE=/tmp/packages.php');
+putenv('APP_CONFIG_CACHE=/tmp/config.php');
+putenv('APP_ROUTES_CACHE=/tmp/routes.php');
+putenv('VIEW_COMPILED_PATH=/tmp/storage/framework/views');
+// ----------------------------------------------------------------------
+
 require __DIR__.'/../vendor/autoload.php';
 
-// 2. Bangun Aplikasi Laravel
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
-// --- DI SINI KUNCI UTAMA VERCEL ---
-// Pindahkan storage path ke /tmp karena hanya folder ini yang bisa ditulis (Writeable) di Vercel
+// Pindahkan storage ke /tmp
 $app->useStoragePath('/tmp/storage');
 
-// Buat struktur folder storage secara otomatis di /tmp jika belum ada
+// Buat struktur folder otomatis
 $dirs = [
     '/tmp/storage/framework/views',
     '/tmp/storage/framework/cache/data',
@@ -26,14 +31,10 @@ foreach ($dirs as $dir) {
         mkdir($dir, 0777, true);
     }
 }
-// ----------------------------------
 
-// 3. Jalankan Aplikasi (Mendukung Laravel 10 & 11)
 if (method_exists($app, 'handleRequest')) {
-    // Jalur untuk Laravel 11
     $app->handleRequest(Request::capture());
 } else {
-    // Jalur untuk Laravel 10
     $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
     $response = $kernel->handle(
         $request = Request::capture()
