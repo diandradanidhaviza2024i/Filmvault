@@ -1,9 +1,20 @@
 <?php
 
 /**
- * Ini adalah file jembatan (entry point) khusus untuk Vercel.
- * Vercel Serverless Functions akan membaca folder /api
- * File ini akan meneruskan semua request Vercel ke sistem public/index.php milik Laravel.
+ * Entry point khusus untuk Vercel Serverless.
+ * Mengarahkan request langsung ke sistem bootstrap Laravel.
  */
 
-require __DIR__ . '/../public/index.php';
+require __DIR__ . '/../vendor/autoload.php';
+
+$app = require_once __DIR__ . '/../bootstrap/app.php';
+
+$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
+
+$response = $kernel->handle(
+    $request = Illuminate\Http\Request::capture()
+);
+
+$response->send();
+
+$kernel->terminate($request, $response);
