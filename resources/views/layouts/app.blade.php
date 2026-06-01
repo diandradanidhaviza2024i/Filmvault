@@ -21,8 +21,8 @@
 
         /* Navbar Futuristik */
         .navbar-custom { background: rgba(5, 2, 2, 0.85); backdrop-filter: blur(15px); border-bottom: 1px solid rgba(229, 9, 20, 0.3); box-shadow: 0 4px 30px rgba(229, 9, 20, 0.1); }
-        .navbar-brand { font-family: 'Orbitron', sans-serif; font-weight: 900; color: transparent; -webkit-text-stroke: 1px #e50914; letter-spacing: 2px; font-size: 1.6rem; text-shadow: 0 0 10px rgba(229, 9, 20, 0.3); transition: all 0.3s; }
-        .navbar-brand:hover { color: #e50914; -webkit-text-stroke: 0px; text-shadow: 0 0 20px rgba(229, 9, 20, 0.8); }
+        .navbar-brand { font-family: 'Orbitron', sans-serif; font-weight: 900; color: #ffffff; -webkit-text-stroke: 1px #e50914; letter-spacing: 2px; font-size: 1.6rem; text-shadow: 0 0 5px #e50914, 0 0 15px #e50914, 0 0 25px rgba(229, 9, 20, 0.5); transition: all 0.3s; }
+        .navbar-brand:hover { color: #e50914; -webkit-text-stroke: 0px; text-shadow: 0 0 10px #e50914, 0 0 25px #ff3333, 0 0 45px #ff3333; }
         .nav-link { color: #b3b3b3 !important; font-weight: 500; transition: all 0.3s ease; letter-spacing: 0.5px; }
         .nav-link:hover, .nav-link.active { color: #fff !important; text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
 
