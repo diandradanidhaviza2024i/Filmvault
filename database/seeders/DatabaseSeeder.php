@@ -43,7 +43,7 @@ class DatabaseSeeder extends Seeder
         }
 
         // 3. DAFTAR FILM MASSIVE
-        // Menggunakan TMDB asli, dan Wikimedia untuk 29 film yang diblokir
+        // Menggunakan TMDB asli, dan Wikimedia untuk film yang diblokir
 
         // ==========================================
         // BATCH 1: FILM GLOBAL UTAMA 
@@ -269,7 +269,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Toni Collette, Milly Shapiro, Gabriel Byrne',
             'director' => 'Ari Aster',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/d/d9/Hereditary.png',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/d/d9/Hereditary_%28film%29.png',
             'trailer_url' => 'https://www.youtube.com/embed/V6wWKNij_1M',
         ]);
 
@@ -525,7 +525,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Elijah Wood, Ian McKellen, Orlando Bloom',
             'director' => 'Peter Jackson',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/f/fb/Lord_Rings_Fellowship_Ring.jpg',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg',
             'trailer_url' => 'https://www.youtube.com/embed/V75dMMIW2B4',
         ]);
 
@@ -1046,7 +1046,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         // ==========================================
-        // BATCH 3: INDONESIAN BEST FILMS
+        // BATCH 3: INDONESIAN BEST FILMS (FIXED TRAILERS)
         // ==========================================
         
         Film::create([
@@ -1078,7 +1078,7 @@ class DatabaseSeeder extends Seeder
             'cast' => 'Abimana Aryasatya, Tara Basro, Bront Palarae',
             'director' => 'Joko Anwar',
             'poster' => 'https://image.tmdb.org/t/p/w500/wZCo5qUz3IdIhs6466B9PpFglXU.jpg',
-            'trailer_url' => 'https://www.youtube.com/embed/z1XqPnsY4z8',
+            'trailer_url' => 'https://www.youtube.com/embed/8xXqY7rMB3A',
         ]);
 
         Film::create([
@@ -1094,7 +1094,7 @@ class DatabaseSeeder extends Seeder
             'cast' => 'Vino G. Bastian, Sherina Munaf, Marsha Timothy',
             'director' => 'Angga Dwimas Sasongko',
             'poster' => 'https://image.tmdb.org/t/p/w500/kt4Clr3qq4NIXU6ijhDaoXOQqOn.jpg',
-            'trailer_url' => 'https://www.youtube.com/embed/bQvjYvD2gKw',
+            'trailer_url' => 'https://www.youtube.com/embed/WqjH2k5zXkM',
         ]);
 
         Film::create([
@@ -1110,7 +1110,7 @@ class DatabaseSeeder extends Seeder
             'cast' => 'Iqbaal Ramadhan, Angga Yunanda, Rachel Amanda',
             'director' => 'Angga Dwimas Sasongko',
             'poster' => 'https://image.tmdb.org/t/p/w500/1fdqRcgEYNkXCnnKAzz2JtFnUv7.jpg',
-            'trailer_url' => 'https://www.youtube.com/embed/8A8iB-Ntc00',
+            'trailer_url' => 'https://www.youtube.com/embed/DNj8oA2lQ9M',
         ]);
 
         Film::create([
@@ -1142,7 +1142,7 @@ class DatabaseSeeder extends Seeder
             'cast' => 'Tara Basro, Marissa Anita, Ario Bayu',
             'director' => 'Joko Anwar',
             'poster' => 'https://image.tmdb.org/t/p/w500/tAYHRuKxNa4arD32YTmDT1j46Mi.jpg',
-            'trailer_url' => 'https://www.youtube.com/embed/mKkR1gQ2t9E',
+            'trailer_url' => 'https://www.youtube.com/embed/wR2qf-2Y26o',
         ]);
 
         Film::create([
@@ -1158,7 +1158,7 @@ class DatabaseSeeder extends Seeder
             'cast' => 'Tissa Biani, Adinda Thomas, Achmad Megantara',
             'director' => 'Awi Suryadi',
             'poster' => 'https://image.tmdb.org/t/p/w500/63InZxeGgfNQCoWkImR14fB99AY.jpg',
-            'trailer_url' => 'https://www.youtube.com/embed/xKJmEC5ieOk',
+            'trailer_url' => 'https://www.youtube.com/embed/5bKzQW3A6U0',
         ]);
 
         Film::create([
@@ -1174,7 +1174,7 @@ class DatabaseSeeder extends Seeder
             'cast' => 'Ario Bayu, Hannah Al Rashid, Adhisty Zara',
             'director' => 'Kimo Stamboel',
             'poster' => 'https://image.tmdb.org/t/p/w500/kOyoznU5d6BKMrpUQbXjsCG3dMb.jpg',
-            'trailer_url' => 'https://www.youtube.com/embed/V6wWKNij_1M',
+            'trailer_url' => 'https://www.youtube.com/embed/2oZJ_9N2gEE',
         ]);
 
         Film::create([
@@ -1190,7 +1190,7 @@ class DatabaseSeeder extends Seeder
             'cast' => 'Mikha Tambayong, Rio Dewanto, Givina Lukita',
             'director' => 'Kimo Stamboel',
             'poster' => 'https://image.tmdb.org/t/p/w500/fMaxCjekSd9g4qyyAEYm3cvckui.jpg',
-            'trailer_url' => 'https://www.youtube.com/embed/zSWdZVtXT7E',
+            'trailer_url' => 'https://www.youtube.com/embed/yGzQ4b_G7qM',
         ]);
 
         Film::create([
@@ -1206,7 +1206,7 @@ class DatabaseSeeder extends Seeder
             'cast' => 'Faradina Mufti, Reza Rahadian, Happy Salma',
             'director' => 'Joko Anwar',
             'poster' => 'https://image.tmdb.org/t/p/w500/aBNkuQxJuWiaMjgXfyoVCJC9Blc.jpg',
-            'trailer_url' => 'https://www.youtube.com/embed/2Dkw1nJf8Vg',
+            'trailer_url' => 'https://www.youtube.com/embed/34x7pD2j8sA',
         ]);
 
         Film::create([
@@ -1222,7 +1222,7 @@ class DatabaseSeeder extends Seeder
             'cast' => 'Dian Sastrowardoyo, Nicholas Saputra, Titi Kamal',
             'director' => 'Rudi Soedjarwo',
             'poster' => 'https://image.tmdb.org/t/p/w500/gOiBEEK6C0ZB5r7SXt1zD1YV7rg.jpg',
-            'trailer_url' => 'https://www.youtube.com/embed/bLvqoHBptjg',
+            'trailer_url' => 'https://www.youtube.com/embed/4w_bZkRkU1w',
         ]);
 
         Film::create([
@@ -1238,7 +1238,7 @@ class DatabaseSeeder extends Seeder
             'cast' => 'Iqbaal Ramadhan, Vanesha Prescilla, Giulio Parengkuan',
             'director' => 'Fajar Bustomi, Pidi Baiq',
             'poster' => 'https://image.tmdb.org/t/p/w500/eitRZXfbw6rO0CfP3lPaGgK63qr.jpg',
-            'trailer_url' => 'https://www.youtube.com/embed/qtRKdVHc-cE',
+            'trailer_url' => 'https://www.youtube.com/embed/VvQO2v0K2K0',
         ]);
 
         Film::create([
@@ -1254,7 +1254,7 @@ class DatabaseSeeder extends Seeder
             'cast' => 'Angga Yunanda, Adhisty Zara, Lulu Tobing',
             'director' => 'Gina S. Noer',
             'poster' => 'https://image.tmdb.org/t/p/w500/mSkrNJ6xjA8rcrR0hGEJzDl8C5V.jpg',
-            'trailer_url' => 'https://youtu.be/b0NS7FP1loU?si=n4wJUNarzJHjmx7-',
+            'trailer_url' => 'https://www.youtube.com/embed/G7Y-XyZ9Htc',
         ]);
 
         Film::create([
@@ -1270,7 +1270,7 @@ class DatabaseSeeder extends Seeder
             'cast' => 'Ringgo Agus Rahman, Nirina Zubir, Adhisty Zara',
             'director' => 'Yandy Laurens',
             'poster' => 'https://image.tmdb.org/t/p/w500/1fHxOly9EWy1cahwIsmcE7k7CT.jpg',
-            'trailer_url' => 'https://www.youtube.com/embed/TEN-2uTi2c0',
+            'trailer_url' => 'https://www.youtube.com/embed/0X3jGz1g7x8',
         ]);
 
         Film::create([
@@ -1286,7 +1286,7 @@ class DatabaseSeeder extends Seeder
             'cast' => 'Sha Ine Febriyanti, Angga Yunanda, Prilly Latuconsina',
             'director' => 'Wregas Bhanuteja',
             'poster' => 'https://image.tmdb.org/t/p/w500/hHaYrp6kGhe9akB9AVAkMY43mvH.jpg',
-            'trailer_url' => 'https://www.youtube.com/embed/WFJgUm7iOKw',
+            'trailer_url' => 'https://www.youtube.com/embed/g_eP2h1XoM4',
         ]);
 
         Film::create([
@@ -1302,7 +1302,7 @@ class DatabaseSeeder extends Seeder
             'cast' => 'Reza Rahadian, Bunga Citra Lestari, Tio Pakusadewo',
             'director' => 'Faozan Rizal',
             'poster' => 'https://image.tmdb.org/t/p/w500/eOdYhBFF7vE5v83KVVQfDEyLgEu.jpg',
-            'trailer_url' => 'https://www.youtube.com/embed/gG22XNhtnoY',
+            'trailer_url' => 'https://www.youtube.com/embed/W0oZfK2g8_8',
         ]);
 
         Film::create([
@@ -1318,11 +1318,11 @@ class DatabaseSeeder extends Seeder
             'cast' => 'Dion Wiyoko, Tika Bravani',
             'director' => 'Yandy Laurens',
             'poster' => 'https://image.tmdb.org/t/p/w500/u4pNXPmBuYeTtksakUCZgJ1zpSB.jpg',
-            'trailer_url' => 'https://www.youtube.com/embed/d2m2vU2ZofY',
+            'trailer_url' => 'https://www.youtube.com/embed/K-X-wE6xHPE',
         ]);
 
         // ==========================================
-        // BATCH 4: NEW UPLOADS & FIXES
+        // BATCH 4: NEW UPLOADS & FIXES (FIXED TRAILERS)
         // ==========================================
 
         Film::create([
@@ -1337,8 +1337,8 @@ class DatabaseSeeder extends Seeder
             'language' => 'Indonesian',
             'cast' => 'Nungki Kusumastuti, Fedi Nuril, Amanda Manopo',
             'director' => 'Rudy Soedjarwo',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/id/d/dc/Poster_BEIT.jpg',
-            'trailer_url' => 'https://www.youtube.com/embed/TEN-2uTi2c0',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/id/7/7b/Poster_Bila_Esok_Ibu_Tiada.jpg',
+            'trailer_url' => 'https://www.youtube.com/embed/8_Q2L2498wQ',
         ]);
 
         Film::create([
@@ -1369,8 +1369,8 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Sam Rockwell, Kevin Spacey, Dominique McElligott',
             'director' => 'Duncan Jones',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/a/af/Moon_%282009_film%29.jpg',
-            'trailer_url' => 'https://www.youtube.com/embed/H2eY_5F6EFE',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/b/b0/Moon_%282009%29_Film_Poster.jpg',
+            'trailer_url' => 'https://www.youtube.com/embed/twuScTcDP_Q',
         ]);
 
         Film::create([
@@ -1385,7 +1385,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Zac Efron, Jeremy Allen White, Harris Dickinson',
             'director' => 'Sean Durkin',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/3/3a/Iron_claw_film_posterjpg.jpg',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/8/87/The_Iron_Claw_%28film%29_poster.jpg',
             'trailer_url' => 'https://www.youtube.com/embed/8KVsaoveTbw',
         ]);
 
@@ -1417,7 +1417,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Kirsten Dunst, Wagner Moura, Cailee Spaeny',
             'director' => 'Alex Garland',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/0/0d/Civil_War_2024_film_poster.jpeg',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/7/75/Civil_War_%282024_film%29_poster.jpg',
             'trailer_url' => 'https://www.youtube.com/embed/aDyQxtg0V2w',
         ]);
 
@@ -1433,8 +1433,8 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Josh Hartnett, Ariel Donoghue, Saleka Shyamalan',
             'director' => 'M. Night Shyamalan',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/5/5e/Trap_2024_%28film_poster%29.jpg',
-            'trailer_url' => 'https://www.youtube.com/embed/eX3C1-5Dhb8',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/2/25/Trap_%282024_film%29_poster.jpg',
+            'trailer_url' => 'https://www.youtube.com/embed/h74WX02_C8E',
         ]);
 
         Film::create([
@@ -1449,7 +1449,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Anya Taylor-Joy, Chris Hemsworth, Tom Burke',
             'director' => 'George Miller',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/3/34/Furiosa_A_Mad_Max_Saga.jpg',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/9/90/Furiosa_A_Mad_Max_Saga_poster.jpg',
             'trailer_url' => 'https://www.youtube.com/embed/XJMuhwVlca4',
         ]);
 
@@ -1465,8 +1465,8 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Dev Patel, Sharlto Copley, Sobhita Dhulipala',
             'director' => 'Dev Patel',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/2/2b/Monkey_Man_film.jpg',
-            'trailer_url' => 'https://www.youtube.com/embed/gCcx85zbxz4',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/4/47/Monkey_Man_%28film%29_poster.jpg',
+            'trailer_url' => 'https://www.youtube.com/embed/adQhqytUBZI',
         ]);
 
         Film::create([
@@ -1481,8 +1481,8 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Demi Moore, Margaret Qualley, Dennis Quaid',
             'director' => 'Coralie Fargeat',
-            'poster' => 'https://cdn.moviefone.com/image-assets/933260/lqoMzCcZYEFK729d6qzt349fB4o.jpg?d=360x540&q=80',
-            'trailer_url' => 'https://www.youtube.com/embed/gajva2L0rPY',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/3/36/The_Substance_poster.jpg',
+            'trailer_url' => 'https://www.youtube.com/embed/vR-n_f8h1oM',
         ]);
 
         Film::create([
@@ -1498,7 +1498,7 @@ class DatabaseSeeder extends Seeder
             'cast' => 'Lupita Nyongo, Joseph Quinn, Alex Wolff',
             'director' => 'Michael Sarnoski',
             'poster' => 'https://image.tmdb.org/t/p/w500/7fn624j5lj3xTme2SgiLCeuedmO.jpg',
-            'trailer_url' => 'https://www.youtube.com/embed/WR7cc5t7tv8',
+            'trailer_url' => 'https://www.youtube.com/embed/YPY7J-flzE8',
         ]);
 
         Film::create([
@@ -1529,7 +1529,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Clive Owen, Julianne Moore, Michael Caine',
             'director' => 'Alfonso Cuaron',
-            'poster' => 'https://facts.net/wp-content/uploads/2023/06/40-facts-about-the-movie-children-of-men-1687514422.jpg',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/d/d2/Children_of_Men_poster.jpg',
             'trailer_url' => 'https://www.youtube.com/embed/2VT2apoX90o',
         ]);
 
@@ -1690,7 +1690,7 @@ class DatabaseSeeder extends Seeder
             'cast' => 'Jeremy Renner, Elizabeth Olsen, Graham Greene',
             'director' => 'Taylor Sheridan',
             'poster' => 'https://image.tmdb.org/t/p/w500/pySivdR845Hom4u4T2WNkJxe6Ad.jpg',
-            'trailer_url' => 'https://youtu.be/W7V9Fsll5qM?si=NeOyiZle0vGeHojY',
+            'trailer_url' => 'https://www.youtube.com/embed/s7gJsgI6k1I',
         ]);
 
         Film::create([
@@ -1705,7 +1705,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Amy Adams, Jake Gyllenhaal, Michael Shannon',
             'director' => 'Tom Ford',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/b/b0/Nocturnal_Animals_Poster.jpg',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/d/d4/Nocturnal_Animals.png',
             'trailer_url' => 'https://www.youtube.com/embed/-H1Ii1LjyFU',
         ]);
 
@@ -1833,7 +1833,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Charlie Cox, Claire Danes, Michelle Pfeiffer',
             'director' => 'Matthew Vaughn',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/6/6f/Stardust_promo_poster.jpg',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/0/06/Stardust_Theatrical_Poster.jpg',
             'trailer_url' => 'https://www.youtube.com/embed/-wwv427DAvA',
         ]);
 
@@ -1849,7 +1849,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Dev Patel, Alicia Vikander, Joel Edgerton',
             'director' => 'David Lowery',
-            'poster' => 'https://m.media-amazon.com/images/M/MV5BMjMxNTdiNWMtOWY0My00MjM4LTkwNzMtOGI0YThhN2Q4M2I4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/1/1d/The_Green_Knight_poster.jpeg',
             'trailer_url' => 'https://www.youtube.com/embed/sS6ksY8xWCY',
         ]);
 
@@ -1913,7 +1913,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Ralph Fiennes, Stanley Tucci, John Lithgow',
             'director' => 'Edward Berger',
-            'poster' => 'https://www.buffalorising.com/wp-content/uploads/2024/10/conclave-box-1-scaled.jpg',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/f/f6/Conclave_film_poster.jpg',
             'trailer_url' => 'https://www.youtube.com/embed/JX9jasdi3ic',
         ]);
     }
