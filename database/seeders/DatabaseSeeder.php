@@ -269,7 +269,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Toni Collette, Milly Shapiro, Gabriel Byrne',
             'director' => 'Ari Aster',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/d/d9/Hereditary_%28film%29.png',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/d/d9/Hereditary.png',
             'trailer_url' => 'https://www.youtube.com/embed/V6wWKNij_1M',
         ]);
 
@@ -525,7 +525,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Elijah Wood, Ian McKellen, Orlando Bloom',
             'director' => 'Peter Jackson',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/f/fb/Lord_Rings_Fellowship_Ring.jpg',
             'trailer_url' => 'https://www.youtube.com/embed/V75dMMIW2B4',
         ]);
 
@@ -1337,7 +1337,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'Indonesian',
             'cast' => 'Nungki Kusumastuti, Fedi Nuril, Amanda Manopo',
             'director' => 'Rudy Soedjarwo',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/id/7/7b/Poster_Bila_Esok_Ibu_Tiada.jpg',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/id/d/dc/Poster_BEIT.jpg',
             'trailer_url' => 'https://www.youtube.com/embed/8_Q2L2498wQ',
         ]);
 
@@ -1369,7 +1369,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Sam Rockwell, Kevin Spacey, Dominique McElligott',
             'director' => 'Duncan Jones',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/b/b0/Moon_%282009%29_Film_Poster.jpg',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/a/af/Moon_%282009_film%29.jpg',
             'trailer_url' => 'https://www.youtube.com/embed/twuScTcDP_Q',
         ]);
 
@@ -1385,7 +1385,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Zac Efron, Jeremy Allen White, Harris Dickinson',
             'director' => 'Sean Durkin',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/8/87/The_Iron_Claw_%28film%29_poster.jpg',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/3/3a/Iron_claw_film_posterjpg.jpg',
             'trailer_url' => 'https://www.youtube.com/embed/8KVsaoveTbw',
         ]);
 
@@ -1417,7 +1417,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Kirsten Dunst, Wagner Moura, Cailee Spaeny',
             'director' => 'Alex Garland',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/7/75/Civil_War_%282024_film%29_poster.jpg',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/0/0d/Civil_War_2024_film_poster.jpeg',
             'trailer_url' => 'https://www.youtube.com/embed/aDyQxtg0V2w',
         ]);
 
@@ -1433,7 +1433,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Josh Hartnett, Ariel Donoghue, Saleka Shyamalan',
             'director' => 'M. Night Shyamalan',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/2/25/Trap_%282024_film%29_poster.jpg',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/5/5e/Trap_2024_%28film_poster%29.jpg',
             'trailer_url' => 'https://www.youtube.com/embed/h74WX02_C8E',
         ]);
 
@@ -1449,7 +1449,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Anya Taylor-Joy, Chris Hemsworth, Tom Burke',
             'director' => 'George Miller',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/9/90/Furiosa_A_Mad_Max_Saga_poster.jpg',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/3/34/Furiosa_A_Mad_Max_Saga.jpg',
             'trailer_url' => 'https://www.youtube.com/embed/XJMuhwVlca4',
         ]);
 
@@ -1465,7 +1465,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Dev Patel, Sharlto Copley, Sobhita Dhulipala',
             'director' => 'Dev Patel',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/4/47/Monkey_Man_%28film%29_poster.jpg',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/2/2b/Monkey_Man_film.jpg',
             'trailer_url' => 'https://www.youtube.com/embed/adQhqytUBZI',
         ]);
 
@@ -1481,7 +1481,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Demi Moore, Margaret Qualley, Dennis Quaid',
             'director' => 'Coralie Fargeat',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/3/36/The_Substance_poster.jpg',
+            'poster' => 'https://cdn.moviefone.com/image-assets/933260/lqoMzCcZYEFK729d6qzt349fB4o.jpg?d=360x540&q=80',
             'trailer_url' => 'https://www.youtube.com/embed/vR-n_f8h1oM',
         ]);
 
@@ -1529,7 +1529,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Clive Owen, Julianne Moore, Michael Caine',
             'director' => 'Alfonso Cuaron',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/d/d2/Children_of_Men_poster.jpg',
+            'poster' => 'https://facts.net/wp-content/uploads/2023/06/40-facts-about-the-movie-children-of-men-1687514422.jpg',
             'trailer_url' => 'https://www.youtube.com/embed/2VT2apoX90o',
         ]);
 
@@ -1705,7 +1705,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Amy Adams, Jake Gyllenhaal, Michael Shannon',
             'director' => 'Tom Ford',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/d/d4/Nocturnal_Animals.png',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/b/b0/Nocturnal_Animals_Poster.jpg',
             'trailer_url' => 'https://www.youtube.com/embed/-H1Ii1LjyFU',
         ]);
 
@@ -1833,7 +1833,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Charlie Cox, Claire Danes, Michelle Pfeiffer',
             'director' => 'Matthew Vaughn',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/0/06/Stardust_Theatrical_Poster.jpg',
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/6/6f/Stardust_promo_poster.jpg',
             'trailer_url' => 'https://www.youtube.com/embed/-wwv427DAvA',
         ]);
 
@@ -1849,7 +1849,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Dev Patel, Alicia Vikander, Joel Edgerton',
             'director' => 'David Lowery',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/1/1d/The_Green_Knight_poster.jpeg',
+            'poster' => 'https://m.media-amazon.com/images/M/MV5BMjMxNTdiNWMtOWY0My00MjM4LTkwNzMtOGI0YThhN2Q4M2I4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg',
             'trailer_url' => 'https://www.youtube.com/embed/sS6ksY8xWCY',
         ]);
 
@@ -1913,7 +1913,7 @@ class DatabaseSeeder extends Seeder
             'language' => 'English',
             'cast' => 'Ralph Fiennes, Stanley Tucci, John Lithgow',
             'director' => 'Edward Berger',
-            'poster' => 'https://upload.wikimedia.org/wikipedia/en/f/f6/Conclave_film_poster.jpg',
+            'poster' => 'https://www.buffalorising.com/wp-content/uploads/2024/10/conclave-box-1-scaled.jpg',
             'trailer_url' => 'https://www.youtube.com/embed/JX9jasdi3ic',
         ]);
     }
