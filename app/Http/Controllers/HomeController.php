@@ -13,16 +13,39 @@ class HomeController extends Controller
      */
     public function index(Request $request)
     {
-        // Fitur Pencarian: Jika ada query 'search' dari URL
+        // Tangkap semua input filter dari URL
         $search = $request->query('search');
+        $genreFilter = $request->query('genre');
+        $yearFilter = $request->query('year');
+        $countryFilter = $request->query('country');
 
-        // Mengambil data film beserta relasi genrenya (Eager Loading untuk optimasi)
-        $films = Film::with('genre')
-                    ->when($search, function ($query, $search) {
-                        return $query->where('title', 'like', '%' . $search . '%');
-                    })
-                    ->latest() // Urutkan dari yang terbaru ditambahkan
-                    ->paginate(12); // Tampilkan 12 film per halaman
+        // Mulai query ke database
+        $query = Film::with('genre');
+
+        // 1. Logika Filter Pencarian
+        if ($search) {
+            $query->where('title', 'like', '%' . $search . '%');
+        }
+
+        // 2. Logika Filter Genre
+        if ($genreFilter) {
+            $query->whereHas('genre', function($q) use ($genreFilter) {
+                $q->where('name', $genreFilter);
+            });
+        }
+
+        // 3. Logika Filter Year (Tahun)
+        if ($yearFilter) {
+            $query->where('release_year', $yearFilter);
+        }
+
+        // 4. Logika Filter Country (Negara)
+        if ($countryFilter) {
+            $query->where('country', $countryFilter);
+        }
+
+        // Eksekusi data, ubah jadi 15 per halaman, dan pastikan filter tidak hilang saat pindah page
+        $films = $query->latest()->paginate(15)->appends($request->all());
 
         $genres = Genre::orderBy('name', 'asc')->get(); // Ambil semua genre untuk menu filter
 
@@ -47,18 +70,16 @@ class HomeController extends Controller
     }
 
     /**
-     * Menampilkan Film Berdasarkan Genre Tertentu
-     * PERBAIKAN: Me-reuse view 'home.index' daripada mencari view 'home.genre' yang tidak ada.
+     * Menampilkan Film Berdasarkan Genre Tertentu (dari klik link)
      */
     public function byGenre($slug)
     {
         $genre = Genre::where('slug', $slug)->firstOrFail();
         
-        // Ambil film yang id genrenya sama dengan genre yang dipilih
         $films = Film::with('genre')
                     ->where('genre_id', $genre->id)
                     ->latest()
-                    ->paginate(12);
+                    ->paginate(15); // Disamakan menjadi 15 film per halaman
 
         $genres = Genre::orderBy('name', 'asc')->get();
         
@@ -89,7 +110,7 @@ class HomeController extends Controller
         $user = auth()->user();
         
         // Ambil data film dari relasi favorites milik user yang sedang login
-        $films = $user->favorites()->with('genre')->latest()->paginate(12);
+        $films = $user->favorites()->with('genre')->latest()->paginate(15); // Disamakan 15 juga
 
         return view('home.favorites', compact('films'));
     }

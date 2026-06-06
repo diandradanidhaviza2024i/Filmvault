@@ -26,9 +26,22 @@
         .nav-link { color: #b3b3b3 !important; font-weight: 500; transition: all 0.3s ease; letter-spacing: 0.5px; }
         .nav-link:hover, .nav-link.active { color: #fff !important; text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
 
-        /* Search Bar Futuristik */
-        .search-input { background-color: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: #fff; border-radius: 20px 0 0 20px; transition: all 0.3s; }
-        .search-input:focus { background-color: rgba(229, 9, 20, 0.05); border-color: #e50914; color: #fff; box-shadow: inset 0 0 10px rgba(229, 9, 20, 0.2); }
+        /* Search Bar Futuristik (Updated) */
+        .search-input { 
+            background-color: rgba(255, 255, 255, 0.15); 
+            border: 1px solid rgba(229, 9, 20, 0.6); 
+            color: #fff; 
+            border-radius: 20px 0 0 20px; 
+            transition: all 0.3s; 
+            box-shadow: 0 0 10px rgba(229, 9, 20, 0.1);
+        }
+        .search-input::placeholder { color: rgba(255, 255, 255, 0.7); }
+        .search-input:focus { 
+            background-color: rgba(229, 9, 20, 0.15); 
+            border-color: #ff3333; 
+            color: #fff; 
+            box-shadow: inset 0 0 10px rgba(229, 9, 20, 0.3), 0 0 15px rgba(229, 9, 20, 0.6); 
+        }
         .search-btn { background-color: rgba(229, 9, 20, 0.8); border: 1px solid #ff0f1a; color: white; border-radius: 0 20px 20px 0; transition: all 0.3s; }
         .search-btn:hover { background-color: #e50914; box-shadow: 0 0 15px rgba(229, 9, 20, 0.5); }
 
