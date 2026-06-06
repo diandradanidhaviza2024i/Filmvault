@@ -26,7 +26,7 @@
     <div class="container py-4" id="katalog">
         <div class="d-flex justify-content-between align-items-center mb-5 flex-wrap gap-3">
             <h3 class="fw-bold border-start border-4 ps-3 text-white" style="border-color: #e50914 !important; font-family: 'Orbitron', sans-serif; letter-spacing: 1px;">
-                {{ request('search') ? 'SEARCH RESULTS [' . request'search' . ']' : 'LATEST UPLOADS' }}
+                {{ request('search') ? 'SEARCH RESULTS [' . request('search') . ']' : 'LATEST UPLOADS' }}
             </h3>
             
             <form action="{{ route('home') }}" method="GET" class="d-flex gap-2 flex-wrap">
