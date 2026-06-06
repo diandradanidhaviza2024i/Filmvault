@@ -1254,7 +1254,7 @@ class DatabaseSeeder extends Seeder
             'cast' => 'Angga Yunanda, Adhisty Zara, Lulu Tobing',
             'director' => 'Gina S. Noer',
             'poster' => 'https://image.tmdb.org/t/p/w500/mSkrNJ6xjA8rcrR0hGEJzDl8C5V.jpg',
-            'trailer_url' => 'https://www.youtube.com/embed/dlnmQbPGuls',
+            'trailer_url' => 'https://youtu.be/b0NS7FP1loU?si=n4wJUNarzJHjmx7-',
         ]);
 
         Film::create([
